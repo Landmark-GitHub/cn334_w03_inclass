@@ -9,13 +9,35 @@
            background-color: white;
            color: black; /* เปลี่ยนสีตัวอักษรเป็นสีดำ */
        }
+
+       .product-grid {
+           display: grid;
+           grid-template-columns: repeat(6, 1fr); /* สร้าง 6 คอลัมน์ที่มีขนาดเท่ากัน */
+           gap: 20px; /* ระยะห่างระหว่างรายการสินค้า */
+       }
+
+       .product-item {
+           background-color: #f0f0f0; /* สีพื้นหลังสินค้า */
+           padding: 20px; /* ขอบของสินค้า */
+           border-radius: 10px; /* ขอบมนของสินค้า */
+       }
    </style>
 </head>
 <body class="white-theme"> 
    <div class="container">       
        <h1>Product</h1>
-       <p>This is the product page.</p>
-       <!-- รายการสินค้า -->
+
+       <div class="product-grid">
+           <!-- เริ่มต้นตำแหน่งที่ 1 ในการวางสินค้า -->
+           <div class="product-item">Product 1</div>
+           <div class="product-item">Product 2</div>
+           <div class="product-item">Product 3</div>
+           <div class="product-item">Product 4</div>
+           <div class="product-item">Product 5</div>
+           <div class="product-item">Product 6</div>
+           <!-- สิ้นสุดตำแหน่งที่ 6 ในการวางสินค้า -->
+       </div>
+
    </div>
 </body>
 </html>
