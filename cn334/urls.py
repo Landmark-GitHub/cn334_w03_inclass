@@ -22,5 +22,10 @@ from ecommerce import views as ecom_viwes
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('ecommerce/', ecom_viwes.ecommerce_index_view),
-    path('ecommerce/item/<item_id>', ecom_viwes.item_view)
+    path('ecommerce/item/<item_id>', ecom_viwes.item_view),
+    path('homepage/', ecom_viwes.home_view),
+    path('categorypage/', ecom_viwes.category_view),
+    path('product/', ecom_viwes.product_view),
+    path('checkout/', ecom_viwes.checkout_view),
+    path('contact/', ecom_viwes.contact_view),
 ]

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">   
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+   <title>Check out</title>
+   <style>
+       .white-theme {
+           background-color: white;
+           color: black; /* เปลี่ยนสีตัวอักษรเป็นสีดำ */
+       }
+   </style>
+</head>
+<body class="white-theme"> 
+   <div class="container">       
+       <h1>Check out</h1>
+       <p>This is the check out page.</p>
+       <!-- รายการสินค้าที่ลูกค้าได้เลือก -->
+       <button type="button" id="checkoutBtn">CheckOut</button>
+   </div>
+
+   <script>
+       document.getElementById("checkoutBtn").addEventListener("click", function() {
+           window.location.href = "/homepage/"; // ตั้งค่า URL ที่ต้องการไปหลังจากการ Checkout
+       });
+   </script>
+</body>
+</html>
